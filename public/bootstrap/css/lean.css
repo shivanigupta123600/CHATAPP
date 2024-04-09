@@ -1,0 +1,119 @@
+#first{
+    height:250px;
+    background-color:#16A085;
+}
+:root{
+--blue:#16A085;
+}
+bg-teal{
+    background-color: teal;
+}
+span{
+   
+    margin-left: 10%;
+    margin-right:10px;
+    font-size: 45px;
+    color:white;
+}
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color:white;
+/*    margin-top:25px;*/
+    text-transform: capitalize;
+}
+.row{
+    
+   
+    color:white;
+    font-size: 15px;
+    padding-left:78px;
+    padding-top:5px;
+    text-transform: uppercase;
+}
+#second{
+    height:350px;
+    background-color: lightgray;
+}
+h1{
+    text-align: center;
+    padding-top:35px;
+    letter-spacing: 2px;
+}
+p{
+    margin-left:10%;
+}
+#third{
+    background-color:white;
+    height:400px;
+}
+#third .row{
+   margin:0;
+   padding:0;
+   height:400px;
+}
+#third .row h1{
+    color:black;
+    padding-top:55px;
+    font-size:20px;
+}
+#third .row p{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top:45px;
+    color:black;
+}
+#third .row #btn{
+border:1px solid black;
+color:white;
+background-color: teal;
+margin-left:25%;
+}
+#forth{
+    height:600px;
+    background-color:white ;
+}
+#forth .row{
+    padding:0;
+}
+#forth .row img{
+    height:200px;
+    width:250px;
+    padding-top:15px;
+    margin-left:48px;
+}
+#forth .row h1{
+    font-size: 15px;
+    color:black;
+    text-transform: capitalize;
+}
+#forth .row p{
+    font-size: 12px;
+    color:black;
+}
+#forth .row #btn{
+    border: 1px solid black;
+
+color:white;
+background-color: teal;
+margin-left:25%;
+}
+#fifth{
+    background-color: lightgray;
+    height:300px;
+}
+#fifth h1{
+    text-transform: capitalize;
+    font-size: 45px;
+padding-top: 25px;
+}
+#sixth{
+    background-color:#16A085;
+    height:150px;
+}
+#sixth p{
+    text-transform: uppercase;
+   padding-top:45px;
+   
+
+}

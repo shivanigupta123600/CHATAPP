@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Transfer</title>
+</head>
+
+<body>
+    <h1>File Transfer</h1>
+    <input type="file" id="fileInput" />
+    <button onclick="sendFile()">Send File</button>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+
+        function sendFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const fileData = {
+                        fileName: file.name,
+                        fileType: file.type,
+                        fileBuffer: e.target.result.split(',')[1], // Extracting base64 data
+                    };
+
+                    // Emit the file data to the server
+                    socket.emit('file-upload', fileData);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Listen for incoming files
+        socket.on('file-download', (data) => {
+            // Handle the received file data
+            console.log('Received File:', data);
+        });
+    </script>
+</body>
+
+</html>

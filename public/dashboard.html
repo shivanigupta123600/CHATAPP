@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dashboar.css">
+    <link rel="stylesheet " type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sonic-Chat</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 id="userName"></h2>
+            <!-- <h2 id="input-value">user</h2> -->
+            <input type="text" id="name-input" class="name-input" style="display: none;" />
+            <!-- <p id="DataName"></p> -->
+            <p id="status">status :</p>
+            <ul>
+                <!-- <li><a href="#"><i class="fa-solid fa-message" style="margin-right: 5px;"></i>chat-list</a></li> -->
+
+                <li><a href="#" id="toggleLink" onclick="myFunction()"><i class="fa-solid fa-user-group"
+                            style="margin-right: 5px;"></i>public-room</a></li>
+
+                <!-- <li><a href="#"><i class="fa-solid fa-phone" style="margin-right: 5px;"></i>voice call</a></li> -->
+
+                <li><a href="vedio.html"><i class="fa-solid fa-video" style="margin-right: 5px;"></i>video call</a></li>
+                <li><a href="imageEx.html"><button class="btn-file-formater">Image Convertor</button></a></li>
+                <li><a href="pdf.html"><button class="btn-file-formater">File Convertor</button></a></li>
+                <li><a href="#" id="logout" onclick="logout()">Log Out</a></li>
+            </ul>
+
+        </div>
+
+        <div class="main_content hidden" id="myDIV">
+            <div class="header">Welcome!! Have a nice day.
+                <a href="vedio.html" style="float: right; margin-right:200px;"><i class="fa-solid fa-video"
+                        style="padding-right: 10px;"></i>Call</a>
+
+                <div id="profileContainer">
+                    <img id="userPhoto" src="" alt="User Photo" onclick="selectImage()" />
+                    <!-- <img src="dummy.png" id="profile-photo" onclick="selectImage()"> -->
+                    <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)">
+                </div>
+
+            </div>
+            <div class="info">
+                <div class="main">
+
+                    <div class="main-top">
+                        <ul class="message-container" id="message-container">
+
+                            <li class="message-left">
+                                <span style="margin-right: 8px;"><i class="fa-regular fa-user"></i></span>
+                                <p class="message"><span></span></p>
+                            </li>
+                            <li class="message-right">
+                                <span style="margin-right: 8px;"><i class="fa-regular fa-user"></i></span>
+                                <p class="message"><span></span></p>
+                            </li>
+                            <li class="message-feedback">
+                                <p class="feedback" id="feedback">User is typing a message </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="main-bottom">
+                        <form class="message-form" id="message-form">
+                            <input type="text" name="message" id="message-input" class="message-input">
+                            <div class="v-divider"></div>
+                            <button type="submit" class="send-button">
+                                send <span><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="total-client">
+                    <h3 class="clients-total" id="client-total">total-client : 0</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------scritps ------------ -->
+
+    <!-- ------------firebase links -------------------------- -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- ----------------------------------server file connection ------------------------------------ -->
+    <script type="module" src="app.js"></script>
+    <script src="./firebase-db.js"></script>
+
+    <!-- logout function of firebase ------------------------------------------------- -->
+    <script defer>
+        async function logout() {
+            try {
+                await firebase.auth().signOut();
+                // Redirect to index.html on successful logout
+                window.location.href = 'index.html';
+                alert("logout suceessfully")
+            } catch (error) {
+                // Handle logout error (display error message, etc.)
+
+                console.error(error.message);
+            }
+        }
+    </script>
+    <!-- --------------------    group chat showing ---------------------------------->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- ----------------username experiemnt  -->
+    <!-- <script type="text/javascript"> -->
+    <!-- const storedName = localStorage.getItem('userName'); -->
+
+    <!-- document.getElementById("input-value").innerHTML = storedName; -->
+    </script>
+
+    <script>
+        function selectImage() {
+            document.getElementById('imageInput').click();
+        }
+
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('profile-photo');
+                output.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+    <!-- ----------------------- user status code  -->
+    <script>
+        function updateStatus() {
+            const statusElement = document.getElementById('status');
+            if (navigator.onLine) {
+                statusElement.textContent = " Online";
+                statusElement.style.color = "green";
+            }
+            else {
+                statusElement.textContent = "Offline";
+                statusElement.style.color = "red";
+            }
+        }
+        window.addEventListener('online', function (event) {
+            updateStatus();
+        });
+        window.addEventListener('offline', function (event) {
+            updateStatus();
+        });
+        updateStatus();
+    </script>
+
+    <!-- ---------------font-awessome -js script------------------ -->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- -----------------scket.io--------------------------- -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- ---------------------moment.js script--------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <!-- ---------------main js -->
+    <script src="main.js"></script>
+    <script src="firebase.js"></script>
+
+</body>
+
+</html>

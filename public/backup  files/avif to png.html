@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVIF to PNG Converter</title>
+  <style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto;
+}
+
+  </style>
+</head>
+
+<body>
+  <input type="file" id="imageInput" accept=".avif">
+  <canvas id="outputCanvas"></canvas>
+  <button id="downloadButton">Download PNG</button>
+
+  <script>
+    document.getElementById('imageInput').addEventListener('change', handleImage);
+
+      function handleImage(event) {
+        const input = event.target;
+        const file = input.files[0];
+
+        if (file && file.type === 'image/avif') {
+          convertAVIFtoPNG(file);
+        } else {
+          alert('Please select a valid AVIF image file.');
+          input.value = ''; // Clear the input field
+        }
+      }
+
+      function convertAVIFtoPNG(avifFile) {
+        const canvas = document.getElementById('outputCanvas');
+        const downloadButton = document.getElementById('downloadButton');
+        const ctx = canvas.getContext('2d');
+
+        const img = new Image();
+        img.onload = function () {
+          canvas.width = img.width;
+          canvas.height = img.height;
+          ctx.drawImage(img, 0, 0, img.width, img.height);
+
+          // Convert the canvas content to PNG data URL
+          const pngDataUrl = canvas.toDataURL('image/png');
+
+          // Enable the download button
+          downloadButton.disabled = false;
+
+          // Display the PNG image
+          const newImg = document.createElement('img');
+          newImg.src = pngDataUrl;
+          document.body.appendChild(newImg);
+        };
+
+        // Convert AVIF to PNG using createImageBitmap
+        createImageBitmap(avifFile)
+          .then(bitmap => {
+            img.src = URL.createObjectURL(bitmap);
+          })
+          .catch(error => {
+            console.error('Error converting AVIF to PNG:', error);
+          });
+      }
+
+      // Download button click event
+      document.getElementById('downloadButton').addEventListener('click', downloadPNG);
+
+      function downloadPNG() {
+        const canvas = document.getElementById('outputCanvas');
+        const pngDataUrl = canvas.toDataURL('image/png');
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = pngDataUrl;
+        downloadLink.download = 'converted_image.png';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img-extension convertor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #imageInput {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #downloadButton {
+            display: none;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #convertedName,
+        #originalName {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .options {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .options button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #resetButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="file" id="imageInput" accept="image/*">
+    <label for="imageInput">Choose Image</label>
+
+    <div id="originalName"></div>
+    <img id="originalImg" alt="Original Image">
+
+    <div id="convertedName"></div>
+    <img id="convertedImg" alt="Converted Image">
+
+    <div class="options">
+        <button onclick="convertPNGtoJPG()">PNG to JPG</button>
+        <button onclick="convertWebPtoPNG()">WEBP to PNG</button>
+        <button onclick="convertJPGtoPNG()">JPG to PNG</button>
+        <button onclick="convertAVIFtoPNG()">AVIF to PNG</button>
+      
+    </div>
+
+    <div id="downloadButton">
+        <button onclick="downloadImage()">Download Converted Image</button>
+    </div>
+
+    <button id="resetButton" onclick="resetForm()">Reset</button>
+
+    <script>
+        let selectedImage;
+        let convertedImage;
+        let conversionOption;
+
+        document.getElementById("imageInput").addEventListener("change", function (event) {
+            selectedImage = event.target.files[0];
+
+            // Check if the selected file is an image
+            if (!selectedImage || !selectedImage.type.startsWith("image/")) {
+                alert("Please select a valid image file.");
+                document.getElementById("imageInput").value = ""; // Clear the input
+                selectedImage = null;
+            } else {
+                displayOriginalImage();
+            }
+        });
+
+        function displayOriginalImage() {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                document.getElementById("originalName").innerText = `Original Image: ${selectedImage.name}`;
+                document.getElementById("originalImg").src = e.target.result;
+            };
+
+            reader.readAsDataURL(selectedImage);
+        }
+
+        function convertPNGtoJPG() {
+            conversionOption = "PNG to JPG";
+            convertImage("image/jpeg");
+        }
+
+        function convertWebPtoPNG() {
+            conversionOption = "WebP to PNG";
+            convertImage("image/png");
+        }
+
+        function convertJPGtoPNG() {
+            conversionOption = "JPG to PNG";
+            convertImage("image/png");
+        }
+
+        function convertAVIFtoPNG() {
+            conversionOption = "AVIF to PNG";
+            convertImage("image/png");
+        }
+
+        function convertImage(outputMimeType) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const img = new Image();
+                img.src = e.target.result;
+
+                img.onload = function () {
+                    const canvas = document.createElement("canvas");
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext("2d");
+                    ctx.drawImage(img, 0, 0, img.width, img.height);
+
+                    // Convert the image based on the selected option
+                    convertedImage = canvas.toDataURL(outputMimeType);
+
+                    // Display the converted image
+                    document.getElementById("convertedName").innerText = `Converted Image: ${getConvertedFileName()}`;
+                    document.getElementById("convertedImg").src = convertedImage;
+
+                    // Show the download button
+                    document.getElementById("downloadButton").style.display = "block";
+                };
+            };
+
+            reader.readAsDataURL(selectedImage);
+        }
+
+        function getConvertedFileName() {
+            const originalFileName = selectedImage.name;
+            const extension = convertedImage.startsWith("data:image/jpeg") ? "jpg" : "png";
+            return `${originalFileName.replace(/\.[^/.]+$/, '')}_converted.${extension}`;
+        }
+
+        function downloadImage() {
+            const downloadLink = document.createElement("a");
+            downloadLink.href = convertedImage;
+            downloadLink.download = getConvertedFileName();
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+
+        function resetForm() {
+            document.getElementById("imageInput").value = "";
+            document.getElementById("originalName").innerText = "";
+            document.getElementById("originalImg").src = "";
+            document.getElementById("convertedName").innerText = "";
+            document.getElementById("convertedImg").src = "";
+            document.getElementById("downloadButton").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

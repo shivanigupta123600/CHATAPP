@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    background-color: silver;
+}
+
+#imageInput {
+    display: none;
+
+}
+
+label {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#downloadButton {
+    display: none;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#convertedName,
+#originalName {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.options {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.options button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+#downloadButton {
+
+    padding: 10px 20px;
+    background-color: #b9e9cd;
+    color: #9e6eb7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 93px;
+    margin-left: 38%;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+}
+
+#downloadButton:hover {
+    background-color: black;
+    color: white;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    box-shadow: 1px 2px -1px;
+    height: auto;
+    padding: 30px 20px;
+
+    justify-content: center;
+    align-items: center;
+}

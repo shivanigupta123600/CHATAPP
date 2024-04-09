@@ -1,0 +1,39 @@
+.form{
+	border:1px solid black;
+	background-color:transparent;
+	height:250px;
+	width:250px;
+margin-top:60px;
+
+}
+.form h1{
+	text-align:center;
+	text-transform: capitalize;
+}
+b{
+	text-transform: capitalize;
+	color:black;
+	padding: 4px;
+}
+input{
+	border:none;
+	border-bottom: 1px solid darkcyan;
+	background-color: transparent;
+	padding:5px;
+}
+::placeholder{
+	color:white;
+}
+button{
+	border:1px solid black;
+	border-radius: 30px;
+	margin-left: 5px;
+	padding:5px;
+	text-transform: capitalize;
+
+}
+button:hover{
+	color:white;
+	background-color:black;
+
+}

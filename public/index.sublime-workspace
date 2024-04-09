@@ -1,0 +1,806 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fi",
+				"firebaseConfig"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"col-",
+				"col-lg-12"
+			],
+			[
+				"c",
+				"col-lg-3"
+			],
+			[
+				"acc",
+				"accordion-body"
+			],
+			[
+				"f",
+				"feature-iner-div"
+			],
+			[
+				"blue",
+				"skyblue"
+			],
+			[
+				"mutli",
+				"multi-1"
+			],
+			[
+				"m",
+				"multi-buttons"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"pading",
+				"padding-top"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"sec",
+				"second"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-img"
+			],
+			[
+				"se",
+				"second-text"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"img",
+				"img-div"
+			],
+			[
+				"backgroundc-l",
+				"background-color"
+			],
+			[
+				"col-lg-",
+				"col-lg-12"
+			],
+			[
+				"light",
+				"lightgray"
+			],
+			[
+				"col-lg",
+				"col-lg-12"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"co",
+				"col-lg-6"
+			],
+			[
+				"background-",
+				"background-repeat"
+			],
+			[
+				"col",
+				"col-lg-6"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"l",
+				"lorem\tLorem ipsum"
+			],
+			[
+				"col-l",
+				"col-lg-12"
+			],
+			[
+				"e",
+				"experience-text"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"footer",
+				"footer-condition"
+			],
+			[
+				"pro",
+				"project-div"
+			],
+			[
+				"fa",
+				"faq-list"
+			],
+			[
+				"btn-",
+				"btn-faq"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"btn",
+				"btn-solution-1"
+			],
+			[
+				"about-",
+				"about-heading"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"maker",
+				"marker"
+			],
+			[
+				"fla",
+				"float"
+			],
+			[
+				"s",
+				"span"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"tex-",
+				"text-align"
+			],
+			[
+				"ec",
+				"echo()"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"head",
+				"header-case"
+			],
+			[
+				"h",
+				"h3"
+			],
+			[
+				"mul",
+				"multi-button-2"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"ca",
+				"case-stduies"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"lo",
+				"lower-foter"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"div",
+				"div-fith-2"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"grey",
+				"lightgrey"
+			],
+			[
+				"thir",
+				"third-para"
+			],
+			[
+				"border-bo",
+				"border-bottom-left-radius"
+			],
+			[
+				"di",
+				"div-fith-2"
+			],
+			[
+				"mu",
+				"multi-button-1"
+			],
+			[
+				"foter",
+				"footer-right-text"
+			],
+			[
+				"background-o",
+				"background-color"
+			],
+			[
+				"car",
+				"card-layer"
+			],
+			[
+				"border-top-",
+				"border-top-left-radius"
+			],
+			[
+				"borer",
+				"border-radius"
+			],
+			[
+				"margn",
+				"margin-top"
+			],
+			[
+				"lights",
+				"lightseagreen"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"sm-",
+				"col-sm-6"
+			],
+			[
+				"sla",
+				"slategray"
+			],
+			[
+				"igm",
+				"img12"
+			],
+			[
+				"or",
+				"orangered"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"icn",
+				"icon"
+			],
+			[
+				"fn",
+				"font-size"
+			],
+			[
+				"padin",
+				"padding"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"rea",
+				"readbtn"
+			],
+			[
+				"listyl",
+				"list-style-type"
+			],
+			[
+				"poi",
+				"position"
+			],
+			[
+				"icon",
+				"icon-nav"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"white",
+				"ghostwhite"
+			],
+			[
+				"innrer",
+				"inner-container-text"
+			],
+			[
+				"firs",
+				"first-nav"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"col-sm",
+				"col-sm-12"
+			],
+			[
+				"po",
+				"professonals"
+			],
+			[
+				"profes",
+				"professional"
+			],
+			[
+				"q",
+				"aquamarine"
+			],
+			[
+				"border-bottom-",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-boto",
+				"border-bottom-color"
+			],
+			[
+				"align-",
+				"align-items"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"baco",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"timer",
+				"timer-days"
+			],
+			[
+				"sa",
+				"span"
+			],
+			[
+				"lig",
+				"lightseagreen"
+			],
+			[
+				"mb",
+				"mb-2"
+			],
+			[
+				"sc",
+				"source"
+			],
+			[
+				"cl",
+				"controls"
+			],
+			[
+				"bro",
+				"browse-cat"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"flex",
+				"flex-container"
+			],
+			[
+				"o",
+				"olive"
+			],
+			[
+				"mx",
+				"mx-2"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"mar",
+				"margin-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Admin/OneDrive/Desktop/chat app/public/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/chat app/public/dashboard.html",
+		"/C/Users/Admin/OneDrive/Desktop/chat app/public/form.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/dynamic chat application/public/sign in and login page/form.html",
+		"/C/Users/Admin/OneDrive/Desktop/chat app/public/firebase.js",
+		"/C/Users/Admin/OneDrive/Desktop/internship/dynamic chat application/public/sign in and login page/mail.js",
+		"/C/Users/Admin/OneDrive/Desktop/internship/dynamic chat application/public/sign in and login page/welcome.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/dynamic chat application/public/sign in and login page/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/chat app/basic/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/hit.html",
+		"/C/xampp/htdocs/fts/update_query.php",
+		"/C/Users/Admin/OneDrive/Desktop/chat app/basic/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/internship/Login and Signup Form Design/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/fts/index.php",
+		"/C/Users/Admin/OneDrive/Desktop/internship/Login and Signup Form Design/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/therpymp4/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/Eleven/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/doctor/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/doctor/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/constuction/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/doctor/test.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/netflix-clone project/front.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/constuction/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/Eleven/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/temp1/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/temp1/css/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/temp1/css/.container.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/sugar-template/sugartemp.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/constuction/hit&trail.html",
+		"/C/Users/Admin/OneDrive/Desktop/first.php",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/constuction/template.png",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/template-2.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/template-1.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/newtemp.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/groceryprodcut/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/groceryprodcut/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/newtemp.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/2.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/h&t.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/type.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/digital-maketing/this.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/therpymp4/style.css",
+		"/C/Program Files/Sublime Text 3/style.css",
+		"/C/Program Files/Sublime Text 3/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/therpymp4/hit&run.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/therpymp4/avnish.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/demo.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/text-generate.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/Eleven/trail.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/demo2.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/demoform.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/groceryprodcut/slider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/groceryprodcut/nav.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/qrcode.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/avif-tpng.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/newcard.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/script.js",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/testi.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/cardslider",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/card.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/professional-template/fullslider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/sugar-template/sugartemp.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/cardproduct.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/sugartemp.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/sugartemp.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/mini-project-2/style.css",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/mini-project-2/script.js",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/mini-project-2/index.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/mini-project/img-generator.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/mini-project/avator.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/profile-path.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/my resume/css/resume.css",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/my resume/index.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/netflix-clone project/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/newsliderowl.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/twoslides.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/navbar-botstrap.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/feedbackslider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/slider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/glassnavbar.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/mediaquery1.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/form1.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/Todo List App in JavaScript/script.js",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/Todo List App in JavaScript/style.css",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/Todo List App in JavaScript/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/pratice-8.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/chat application project/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/mediaquery.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/new temp/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/new temp/style.css",
+		"/C/Users/Admin/OneDrive/Desktop/internship/new temp/slider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/signup.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/form1.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task7.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task7.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/hit & trail.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/container-slider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task7slider.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/testimonial.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/slider.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task6.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task6.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/border.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task5.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task5.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/experiment.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task4.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task4.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task3.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task3.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/nav-4.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/sidebar.html",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/bootstrap try/color.css",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/web calculator/scroll-triggered-animations/toaststa.php",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/bootstrap try/structure.html",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/chat application project/style.css",
+		"/C/Users/Admin/OneDrive/Documents/Desktop/university project/chat application project/color.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task2.css",
+		"/C/Users/Admin/OneDrive/Desktop/alphawizz/task2.html",
+		"/C/Users/Admin/OneDrive/Desktop/HTML-V.S/Layout/L-3.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/center.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/electronicchip/index.html",
+		"/C/Users/Admin/OneDrive/Desktop/internship/profile changing.html"
+	],
+	"find":
+	{
+		"height": 29.6
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.6
+	},
+	"input":
+	{
+		"height": 209.6
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-database.js"></script>
+    <script>
+        // Replace with your Firebase project configuration
+            const firebaseConfig = {
+               
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // Get a reference to the database
+            const database = firebase.database();
+
+
+            firebase.auth().onAuthStateChanged((user) => {
+                    if (user) {
+                        // User is signed in
+                        const userName = user.displayName;
+                        const userPhotoURL = user.photoURL;
+
+                        // Display user information on the page
+                        document.getElementById('userName').innerText = userName;
+                        document.getElementById('userPhoto').src = userPhotoURL;
+                    } else {
+                        // User is not signed in, redirect to the login page
+                        window.location.href = 'index.html';
+                    }
+                });
+
+                // Function to handle login
+                    function login() {
+                        const email = document.getElementById('email').value;
+                        const password = document.getElementById('password').value;
+
+                        firebase.auth().signInWithEmailAndPassword(email, password)
+                            .then((userCredential) => {
+                                // Login successful
+                                const user = userCredential.user;
+                                console.log('User logged in:', user);
+
+                                // Redirect to another page after successful login
+                                window.location.href = 'profile.html';
+                            })
+                            .catch((error) => {
+                                console.error('Login failed:', error.message);
+                            });
+                    }
+   
+
+
+
+    </script>
+   
+</body>
+
+</html>
